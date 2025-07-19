@@ -25,7 +25,8 @@ public class Main {
             register(scanner, LOGIN_MAP);
 
         }
-        else {
+        else if(answer.toLowerCase().equals("login")){
+
             if (LOGIN_MAP.isEmpty()){
 
                 System.out.println("Database is empty! Please Register");
@@ -33,8 +34,16 @@ public class Main {
 
             }
             else {
+
                 login(scanner, LOGIN_MAP);
+
             }
+        }
+        else {
+
+            System.out.println("Input was not understood, please try again! ");
+            registerOrLogin();
+
         }
 
         scanner.close();
