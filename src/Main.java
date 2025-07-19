@@ -49,7 +49,21 @@ public class Main {
         System.out.println("What password do you want?");
         String newPassword = scanner.next();
 
-        LOGIN_MAP.put(newUsername, newPassword);
+        if (LOGIN_MAP.containsKey(newUsername)){
+
+            System.out.println("Name is already taken, please try again");
+            register(scanner, LOGIN_MAP);
+            return;
+
+        }
+        else {
+
+            LOGIN_MAP.put(newUsername, newPassword);
+
+        }
+
+
+
 
         System.out.println("Do you want to LOGIN or REGISTER? ");
         String answer2 = scanner.next();
