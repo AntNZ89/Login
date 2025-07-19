@@ -62,9 +62,6 @@ public class Main {
 
         }
 
-
-
-
         System.out.println("Do you want to LOGIN or REGISTER? ");
         String answer2 = scanner.next();
 
