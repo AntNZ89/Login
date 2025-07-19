@@ -17,7 +17,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Do you want to REGISTER or LOGIN? ");
+        System.out.println("Do you want to LOGIN or REGISTER? ");
         String answer = scanner.next();
 
         if (answer.toLowerCase().equals("register")){
